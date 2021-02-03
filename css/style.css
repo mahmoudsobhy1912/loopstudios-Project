@@ -55,8 +55,12 @@ nav li a{
   text-decoration:none ;
 }
 
-nav .icon {
+.nav-icon, .nav-close {
   display: none;
+  position: absolute;
+  right: 20px;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 .header .message {
@@ -168,7 +172,7 @@ nav .icon {
 .sec-img .img .mess-img {
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 35%;
   width: 55%;
   transform: translateX(-50%);
   color: #ffffff;
@@ -232,14 +236,9 @@ nav .icon {
   .header{
     background-image: url("../img/mobile/image-hero.jpg");
   }
-  nav .icon {
-    display:initial;  
-    color: #ffffff;
-    font-size: 30px;
-  }
 
-  #nav-close {
-    display: none;
+  .nav-icon {
+    display: initial;
   }
 
   .navbar nav ul{
@@ -261,10 +260,26 @@ nav .icon {
     height: 100vh;
   }
 
-  .list ul{
-    display: flex;
+  .list {
+    display: flex !important;
     flex-direction: column;
-    align-items: center;
+    margin-top: 30%;
+  }
+
+  .list li {
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #838383;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: initial;
   }
 
   /* End Header and navbar */
@@ -317,7 +332,9 @@ nav .icon {
   .sec-img .img .mess-img{
     font-size: 30px;
     width: initial;
+    transform: initial;
     bottom: 5%;
+    left: 5%;
   }
 
   .all-img {
@@ -378,11 +395,7 @@ nav .icon {
   }
   
   .copy-m {
-    font-size: 18px;
+    font-size: 16px;
   }
   /* end footer */
-
-  .hidden {
-    display: none;
-  }
 }
