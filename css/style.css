@@ -235,10 +235,14 @@ nav .icon {
   nav .icon {
     display:initial;  
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
   }
 
-  .navbar nav li{
+  #nav-close {
+    display: none;
+  }
+
+  .navbar nav ul{
     display: none;
   }
 
@@ -249,6 +253,20 @@ nav .icon {
     top: 50%;
     left: 45%;
   }
+
+  .nav-m {
+    background-image: none;
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* End Header and navbar */
 
   /* Start Section one  */
@@ -364,4 +382,7 @@ nav .icon {
   }
   /* end footer */
 
+  .hidden {
+    display: none;
+  }
 }
